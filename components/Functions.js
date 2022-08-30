@@ -21,13 +21,20 @@ const Functions = () => {
     makeBread(freshBread());
   }, []);
 
-  // ARGUMENTS & PARAMS -------------------------------- BAD
+  // ARGUMENTS & PARAMS --------------------------------
   const makeBreakfast = (main, side, drink) => {
     return `Breakfast includes: ${main}, ${side}, ${drink}`;
   };
-
   const breakfast = makeBreakfast("🥓", "🍕", "🍵");
-  console.log("breakfast : ", breakfast);
+  // console.log("breakfast : ", breakfast);
+
+  // ARGUMENTS & PARAMS -------------------------------- ALT
+  const makeLunch = (options) => {
+    const { main, side, drink } = options;
+    return `Breakfast includes: ${main}, ${side}, ${drink}`;
+  };
+  const lunch = makeLunch({ main: "🍱", side: "🍲", drink: "🥤" });
+  // console.log("lunch : ", lunch);
 
   return (
     <>
@@ -35,7 +42,7 @@ const Functions = () => {
 
       <button
         type="button"
-        class="mt-8 focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+        className="mt-8 focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
         onClick={() => {
           makeBread(bread + "🥐");
         }}

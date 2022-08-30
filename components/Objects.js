@@ -50,13 +50,37 @@ const Objects = () => {
       // 1: "Tank"
       // ...champ.tags,
 
-      // Spreading an object gives us the objects entry (key value pair)
+      // Spreading an objet gives us the objects entry (key value pair)
       ...champ.stats,
     };
   };
 
   const aatrox = flattenChampionStats(aatroxStats);
-  console.log(aatrox);
+  // console.log(aatrox);
+
+  const landBeforeTime = {
+    comet: "☄️",
+    star: "✨",
+    trex: "🦖",
+    longNeck: "🦕",
+  };
+
+  const imdbTop5 = {
+    one: "The Shawshank Redemption",
+    two: "The Godfather",
+    three: "The Dark Knight",
+    four: "The Lord Of The Rings: The Return of the King",
+    five: "Schindler's List",
+  };
+
+  for (const [key, val] of Object.entries(landBeforeTime)) {
+    console.log(`Key: ${key}`);
+    console.log(`Value: ${val}`);
+  }
+
+  for (const val of Object.values(imdbTop5)) {
+    console.log(`Value ONLY: ${val}`);
+  }
 
   return <></>;
 };

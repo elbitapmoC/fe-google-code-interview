@@ -4,6 +4,8 @@ import Footer from "../components/Footer";
 import InCommon from "../components/InCommon";
 import ArrowFunctions from "../components/ArrowFunctions";
 import ConsoleLogs from "../components/ConsoleLogs";
+import Functions from "../components/Functions";
+import Objects from "../components/Objects";
 
 export default function Home() {
   const [count, setCount] = useState(1);
@@ -33,7 +35,9 @@ export default function Home() {
         /> */}
 
         {/* <ArrowFunctions /> */}
-        <ConsoleLogs />
+        {/* <ConsoleLogs /> */}
+        <Functions />
+        <Objects />
       </div>
       <Footer />
     </div>

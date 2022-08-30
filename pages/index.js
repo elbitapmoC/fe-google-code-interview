@@ -3,7 +3,7 @@ import Head from "next/head";
 import Footer from "../components/Footer";
 import InCommon from "../components/InCommon";
 import ArrowFunctions from "../components/ArrowFunctions";
-import ArrowFunctionsInClass from "../components/ArrowFunctionsInClass";
+import ConsoleLogs from "../components/ConsoleLogs";
 
 export default function Home() {
   const [count, setCount] = useState(1);
@@ -32,8 +32,8 @@ export default function Home() {
           description="Checks both arrays, returns true if they have an element has a shared value."
         /> */}
 
-        <ArrowFunctions />
-        <ArrowFunctionsInClass />
+        {/* <ArrowFunctions /> */}
+        <ConsoleLogs />
       </div>
       <Footer />
     </div>
